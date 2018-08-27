@@ -16,8 +16,6 @@
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    /* padding-top: 10px; */
-    /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
     border: rgb(41, 57, 85) solid 2px;
@@ -25,7 +23,6 @@
 
 /* The navigation menu links */
 .sidenav a {
-    /* padding: 8px 8px 8px 32px; */
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -50,9 +47,14 @@ a:hover{
     position: absolute;
     top: 0;
     right: 28px;
-    /* float: left; */
     font-size: 18px;
     margin-left: 50px;
+    color: #000000;
+}
+.sidenav .iconBar{
+    height: 25px;
+    width:auto;
+    padding-top: 2px;
 }
 
 #main {
@@ -62,15 +64,6 @@ a:hover{
     border: #111 solid 2px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-/* @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    } 
-}*/
 #openBar {
     background-color: rgb(41, 57, 85);
     height: 100%;
@@ -83,15 +76,6 @@ a:hover{
     /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* div.toggleBtn {
-    margin-top: 15px;
-    padding-left: 15px;
-    width: 70px;
-    height: 23px;
-    background-color: yellow;
-    transform: rotate(90deg);
-    font-size: 16px;
-} */
 div.toggleBtn {
     margin-top: 25px;
     height: 5px;
