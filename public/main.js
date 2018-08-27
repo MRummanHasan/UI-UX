@@ -70,13 +70,10 @@ function closeNavTwo() {
 }
 function toggleNavTwo() {
     var w = document.getElementById('mySidenavTwo').style.width;
-    // console.log(w);
-    if (w == '0px') {
+    if (w == '0px')
         openNavTwo();
-    }
-    else {
+    else
         closeNavTwo();
-    }
 }
 
 
