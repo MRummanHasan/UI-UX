@@ -193,7 +193,7 @@ div.tileTwo {
     border: rgb(41, 57, 85) solid 2px;
 }
 /* The navigation menu links */
-.sidenav a {
+.sidenavThree a {
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -203,14 +203,19 @@ div.tileTwo {
 a:hover{
     text-decoration: none;
 }
-.sidenav .closebtn {
+.sidenavThree .iconBar{
+    height: 25px;
+    width: auto;
+    padding-top: 2px;
+}
+.sidenavThree .closebtn {
     position: absolute;
     top: 0;
     right: 10px;
     font-size: 18px;
     margin-left: 50px;
 }
-.sidenav .dockbtn {
+.sidenavThree .dockbtn {
     position: absolute;
     top: 0;
     right: 28px;
@@ -218,20 +223,14 @@ a:hover{
     margin-left: 50px;
     color: #000000;
 }
-.sidenav .iconBar{
-    height: 25px;
-    width: auto;
-    padding-top: 2px;
-}
-
-div.toggleBtn {
+div.toggleBtnThree {
     margin-top: 25px;
     height: 5px;
     transform: rotate(90deg);
     font-size: 12px;
     color: rgb(255, 255, 255);
 }
-div.tile {
+div.tileThree {
     position: absolute;
     display: inline;
     top: 5px;
@@ -241,7 +240,7 @@ div.tile {
 }
 /******************************************* 4 *******************************************************/
 /* fourth side navigation menu */
-.sidenavTwo {
+.sidenavFour {
     margin-left: 39px;
     height: 100%;
     /* 100% Full-height */
@@ -252,8 +251,7 @@ div.tile {
     z-index: 1;
     /* Stay on top */
     top: 0;
-    /* Stay at the top */
-    left: 0;
+    right: 0;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -261,9 +259,8 @@ div.tile {
     /* 0.5 second transition effect to slide in the sidenav */
     border: rgb(41, 57, 85) solid 2px;
 }
-
 /* The navigation menu links */
-.sidenavTwo a {
+.sidenavFour a {
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -273,20 +270,19 @@ div.tile {
 a:hover{
     text-decoration: none;
 }
-
-.sidenavTwo .iconBar{
+.sidenavFour .iconBar{
     height: 25px;
     width: auto;
     padding-top: 2px;
 }
-.sidenavTwo .closebtn {
+.sidenavFour .closebtn {
     position: absolute;
     top: 0;
     right: 10px;
     font-size: 18px;
     margin-left: 50px;
 }
-.sidenavTwo .dockbtn {
+.sidenavFour .dockbtn {
     position: absolute;
     top: 0;
     right: 28px;
@@ -294,22 +290,14 @@ a:hover{
     margin-left: 50px;
     color: #000000;
 }
-
-#mainBody {
-    margin-left: 39px;
-    transition: margin-left .5s;
-    padding: 20px;
-    border: #111 solid 2px;
-}
-
-div.toggleBtnTwo {
+div.toggleBtnFour {
     margin-top: 55px;
     height: 6px;
     transform: rotate(90deg);
     font-size: 12px;
     color: rgb(255, 255, 255);
 }
-div.tileTwo {
+div.tileFour {
     position: absolute;
     display: inline;
     top: 65px;
