@@ -13,23 +13,14 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="res/boot.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="res/boot.js" />
+    <link rel="stylesheet" type="text/css" media="screen" href="res/optboot.css" />
 </head>
 
 <body>
-    <div id="mySidenav" class="sidenav">
 
-        <div id="iconBar" style=" background-color: rgb(255, 242, 157);">
-            Navbar
-            <a id="imgName" class="dockbtn">
-                <img src="res/hideIcon.png" onclick="hideUnhide()" /></a>
-
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        </div>
-        <!-- <a style="background-color: yellow" href="#">About</a> -->
-    </div>
-
-    <div id="openBarLEFT">
-
+    <div id="LEFTpanel">
         <div class="toggleBtn" onclick="toggleNav()">
             Navbar1
         </div>
@@ -40,37 +31,64 @@
         </div>
         <div class="tileTwo"> </div>
 
-    </div>
+        <!---------------- First panel Button with Tile Bar --------------->
+        <div id="mySidenav" class="sidenav">
+            <div id="iconBar" style=" background-color: rgb(255, 242, 157);">
+                NavbarOne
+                <a id="imgName" class="dockbtn">
+                    <img src="res/hideIcon.png" onclick="hideUnhide()" /></a>
 
-    <!---------------- Second Button with Second Side Bar --------------->
-    <div id="mySidenavTwo" class="sidenavTwo">
-        <div id="iconBarTwo" style=" background-color: rgb(255, 242, 157);">
-            NavbarTwo
-            <a id="imgName" class="dockbtn">
-                <img src="res/hideIcon.png" onclick="hideUnhideTwo()" /></a>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNavTwo()">&times;</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <!-- <a style="background-color: yellow" href="#">About</a> -->
+        </div>
+        <!---------------- Second panel Button with Tile Bar --------------->
+        <div id="mySidenavTwo" class="sidenavTwo">
+            <div id="iconBarTwo" style=" background-color: rgb(255, 242, 157);">
+                NavbarTwo
+                <a id="imgName" class="dockbtn">
+                    <img src="res/hideIcon.png" onclick="hideUnhideTwo()" /></a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavTwo()">&times;</a>
+            </div>
         </div>
     </div>
-
 
     <div id="mainBody">
         <h1>Start Page</h1>
     </div>
 
-
-    <div id="openBarRIGHT">
-
-            <div class="toggleBtn" onclick="toggleNav()">
-                Navbar3
-            </div>
-            <div class="tile"> </div>
-    
-            <div class="toggleBtnTwo" onclick="toggleNavTwo()">
-                Navbar4
-            </div>
-            <div class="tileTwo"> </div>
-    
+                                <!-- RIGHT PANEL -->
+    <div id="RIGHTpanel">
+        <div class="toggleBtnThird" onclick="toggleNavThree()">
+            Navbar3
         </div>
+        <div class="tileThree"> </div>
+
+        <!-- <div class="toggleBtnFour" onclick="toggleNavFour()">
+            Navbar4
+        </div>
+        <div class="tileFour"> </div> -->
+
+        <!---------------- Third panel Button with Tile Bar --------------->
+        <div id="mySidenavThree" class="sidenavThree">
+            <div id="iconBarThree" style=" background-color: rgb(255, 242, 157);">
+                NavbarThird
+                <a id="imgName" class="dockbtn">
+                    <img src="res/hideIcon.png" onclick="hideUnhideThree()" /></a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavThree()">&times;</a>
+            </div>
+        </div>
+        <!---------------- Fourth panel Button with Tile Bar --------------->
+        <!-- <div id="mySidenavFour" class="sidenavFour">
+            <div id="iconBarFour" style=" background-color: rgb(255, 242, 157);">
+                NavbarFourth
+                <a id="imgName" class="dockbtn">
+                    <img src="res/hideIcon.png" onclick="hideUnhideFour()" /></a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavFour()">&times;</a>
+            </div>
+        </div> -->
+
+    </div>
 </body>
 <script src="main.js"></script>
 
