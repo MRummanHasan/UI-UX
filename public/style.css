@@ -21,7 +21,7 @@
     border: rgb(41, 57, 85) solid 2px;
 }
 
-/* The navigation menu links */
+/* The navigation menu icons */
 .sidenav a {
     text-decoration: none;
     font-size: 25px;
@@ -106,7 +106,7 @@ div.tile {
     border: rgb(41, 57, 85) solid 2px;
 }
 
-/* The navigation menu links */
+/* The navigation menu icons */
 .sidenavTwo a {
     text-decoration: none;
     font-size: 25px;
@@ -175,24 +175,19 @@ div.tileTwo {
 }
 /* Three side navigation menu */
 .sidenavThree {
-    margin-right: 39px;
+    margin-right: 44px;
     height: 100%;
-    /* 100% Full-height */
     width: 0;
-    /* 0 width - change this with JavaScript */
     position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
+    z-index: 9;
     top: 0;
     right: 0;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     transition: 0.5s;
     border: rgb(41, 57, 85) solid 2px;
 }
-/* The navigation menu links */
+/* The navigation menu icons */
 .sidenavThree a {
     text-decoration: none;
     font-size: 25px;
@@ -236,30 +231,25 @@ div.tileThree {
     top: 5px;
     width: 8px;
     height: 45px;
+    z-index: 9;
     background-color: rgb(70, 90, 125);
 }
 /******************************************* 4 *******************************************************/
-/* fourth side navigation menu */
+/* fourth side nav menu */
 .sidenavFour {
-    margin-right: 39px;
+    margin-right: 44px;
     height: 100%;
-    /* 100% Full-height */
     width: 0;
-    /* 0 width - change this with JavaScript */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Stay on top */
     top: 0;
     right: 0;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
     border: rgb(41, 57, 85) solid 2px;
 }
-/* The navigation menu links */
+/* nav menu icons */
 .sidenavFour a {
     text-decoration: none;
     font-size: 25px;
@@ -303,5 +293,6 @@ div.tileFour {
     top: 65px;
     width: 8px;
     height: 45px;
+    z-index: 9;
     background-color: rgb(70, 90, 125);
 }
