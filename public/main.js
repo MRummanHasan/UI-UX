@@ -10,7 +10,7 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("mainBody").style.marginLeft = "0";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"
-    document.getElementById("openbtn").style.display = "block";
+    // document.getElementById("openbtn").style.display = "block";
 }
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
@@ -60,7 +60,7 @@ function openNavTwo() {
     document.getElementById("mySidenavTwo").style.width = "250px";
     document.getElementById("mainBody").style.marginLeft = "40px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"
-    document.getElementById("openbtn").style.display = "block";
+    // document.getElementById("openbtn").style.display = "block";
 }
 function closeNavTwo() {
     document.getElementById("mySidenavTwo").style.width = "0";
@@ -104,9 +104,8 @@ function openNavThree() {
 
     // opening 3
     document.getElementById("mySidenavThree").style.width = "250px";
-    // document.getElementById("mainBody").style.marginLeft = "40px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"
-    document.getElementById("openbtn").style.display = "block";
+    // document.getElementById("openbtn").style.display = "block";
 }
 function closeNavThree() {
     document.getElementById("mySidenavThree").style.width = "0";
@@ -128,11 +127,7 @@ function dockNavThree() {
     // document.getElementById("imgName").src=".../res/unhideIcon.png";
 }
 function hideUnhideThree() {
-    var marginLeft = document.getElementById('mainBody').style.marginLeft;
-    var marginRight = document.getElementById('mainBody').style.marginRight;
-    console.log(marginLeft);
-    console.log(marginRight);
-    // left/right margin == 289 or 40
+    // left/right margin == 289 and 40
     if(marginRight == '289px'){
         closeNavThree();
     }else if (marginRight == '40px') {
@@ -146,19 +141,18 @@ function openNavFour() {
     // closing 3rd
     document.getElementById("mySidenavThree").style.width = "0";
     var w = document.getElementById("mySidenavThree").style.width;
-    console.log("closing3 for 4 " + w);
+    console.log("closing3 for 4 ");
     document.getElementById("mainBody").style.marginRight = "40px";
 
     // opening four
     document.getElementById("mySidenavFour").style.width = "250px";
-    document.getElementById("mainBody").style.marginLeft = "40px";
+    console.log("opening4");
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"
-    document.getElementById("openbtn").style.display = "block";
+    // document.getElementById("openbtn").style.display = "block";
 }
 function closeNavFour() {
     document.getElementById("mySidenavFour").style.width = "0";
-    var w = document.getElementById("mySidenavFour").style.width;
-    console.log("closing4 " + w);
+    console.log("closing4 ");
     document.getElementById("mainBody").style.marginRight = "40px";
 }
 function toggleNavFour() {
@@ -172,7 +166,6 @@ function toggleNavFour() {
 function dockNavFour() {
     console.log("dock4 dock4 dock4");
     document.getElementById("mainBody").style.marginRight = "289px";
-    // document.getElementById("imgName").src=".../res/unhideIcon.png";
 }
 function hideUnhideFour() {
     var t = document.getElementById('mainBody').style.marginRight;
