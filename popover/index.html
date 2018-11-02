@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        div #qwerty {
+            animation: fade-in 5s linear 1, move-up 2s linear 1;
+            transition: 5s;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h3>qwerty</h3>
+        <a href="javascript:;" class="d-inline-block" data-container="body" data-toggle="popover" data-trigger="hover"
+            data-placement="bottom" data-content="Tooltip"> asdf
+            <i class="fa fa-question-circle error"></i>
+        </a>
+<br>
+<br>
+
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="email">Email address:
+                    <a href="javascript:;" class="d-inline-block" id="qwerty" data-container="body" data-toggle="popover"
+                        data-trigger="hover" data-placement="bottom" data-content="Tooltip">
+                        e
+                        <i class="fa fa-question-circle error"></i>
+                    </a>
+                </label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // $('[data-toggle="popover"]').popover();
+            $('[data-toggle="popover"]').popover({ trigger: "manual", html: true, animation: false })
+                .on("click", function () {
+                    var _this = this;
+                    $(this).popover("show");
+                    $(".popover").on("mouseleave", function () {
+                        $(_this).popover('hide');
+                    });
+                }).on("mouseleave", function () {
+                    var _this = this;
+                    setTimeout(function () {
+                        if (!$(".popover:hover").length) {
+                            $(_this).popover("hide");
+                        }
+                    }, 300);
+                });
+        });
+
+    </script>
+</body>
+
+</html>
